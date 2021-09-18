@@ -27,17 +27,27 @@ function fib() {
 function displayNextFib() { 
     var element = document.getElementById("list");
     var fiblist = fib();
-
+    
     element.innerHTML = "";
 
     for (let i = 0; i < 100; i = i + 1) {
         var item = document.createElement("p");
         var text = document.createTextNode("F(" + num + ") = " + fiblist[i].toString());
+        item.style.color = generateColor(i);
         item.appendChild(text);
         element.appendChild(item);
         num = num + 1;
     }
 }
 
+// takes i (a number between 0 and 100) and returns a string which is the color of the "i"th element of a well defined and beautiful gradient
+ function generateColor(i) {
+    var c = i/100;
+    var color = 255*c;
+    var text = "rgb(" + color + "," + color + "," + color + ") "; 
+    console.log(i, text)       
+    return text;
+    
+ }
 
 displayNextFib();
