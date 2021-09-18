@@ -66,7 +66,7 @@ function displayFib() {
 function displayNextFib() { 
     var element = document.getElementById("list");
     var fiblist = fibagain();
-    element.replaceChildren();
+    element.innerHTML = "";
     for (let i = 0; i < 100; i = i + 1) {
         var item = document.createElement("p");
         var text = document.createTextNode("F(" + (num++) + ") = " + fiblist[i].toString());
