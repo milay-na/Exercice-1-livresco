@@ -1,28 +1,29 @@
 
-  .linear-gradient {
-    background-color: #5d4257;
-    background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);
-  
-  }
+.linear-gradient {
+    background-color: #2f4353;
+    background-image: linear-gradient(0deg, #2f4353 0%, #d2ccc4 74%);
+}
 
- .button {
-        background-color: #5d4257;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        position: relative;
-        margin: 0;
-        position: relative;
-        top: 10%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
+
 
 P { text-align: center }
+
+.button {
+	background-color: #2f4353;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	font-size: 16px;
+	cursor: pointer;
+	/* margin: auto; */
+	display: block;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
