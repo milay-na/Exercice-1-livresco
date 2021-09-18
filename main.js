@@ -22,5 +22,16 @@ function fib() {
     return fiblist;
 }
 
+function displayFib() {
+    var element = document.getElementById("list");
+    var fiblist = fib()
+    
+    for (let i = 0; i < 100; i = i + 1) {
+        var item = document.createElement("p");
+        var text = document.createTextNode(fiblist[i].toString());
+        item.appendChild(text);
+        element.appendChild(item);
+    }
+}
 
-fib();
+displayFib();
