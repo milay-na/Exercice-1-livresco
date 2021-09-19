@@ -4,8 +4,6 @@
     background-image: linear-gradient(0deg, #2f4353 0%, #d2ccc4 74%);
 }
 
-
-
 P { text-align: center }
 
 .button {
@@ -15,7 +13,6 @@ P { text-align: center }
 	padding: 15px 32px;
 	font-size: 16px;
 	cursor: pointer;
-	/* margin: auto; */
 	display: block;
 	margin-top: 50px;
 	margin-left: auto;
@@ -26,5 +23,5 @@ P { text-align: center }
 h1 {
     font-size: 30px;
     text-align: center;
-    color : #2f4353
+    color : #2f4353;
 }

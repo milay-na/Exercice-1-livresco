@@ -1,7 +1,10 @@
+//First and second element for the next Fibonacci sequence
 var first = BigInt(0);
 var second = BigInt(1);
+//Number of the element on the current Fibonacci sequence
 var num = 0;
 
+//Returns the next hundred elements of the Fibonacci sequence
 function fib() {
     var a = first;
     var b = second;
@@ -24,6 +27,7 @@ function fib() {
     return fiblist;
 }
 
+//Replace the Fibonacci sequence displayed
 function displayNextFib() { 
     var element = document.getElementById("list");
     var fiblist = fib();
@@ -40,7 +44,8 @@ function displayNextFib() {
     }
 }
 
-// takes i (a number between 0 and 100) and returns a string which is the color of the "i"th element of a well defined and beautiful gradient
+// Takes i (a number between 0 and 100) and returns a string which is the color of the "i"th element of a well defined and beautiful gradient
+// NOTE : currently, the color of the background gradient conflicts with the color of the text in the midle of the list.
  function generateColor(i) {
     var c = i/100;
     var color = 255*c;
