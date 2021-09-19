@@ -44,11 +44,11 @@ function displayNextFib() {
     }
 }
 
-// Takes i (a number between 0 and 100) and returns a string which is the color of the "i"th element of a well defined and beautiful gradient
+// Takes i (a number between 0 and 99) and returns a string which is the color of the "i"th element of a well defined and beautiful gradient
 // NOTE : currently, the color of the background gradient conflicts with the color of the text in the midle of the list.
  function generateColor(i) {
-    var c = i/100;
-    var color = 255*c;
+    var c = i/99;
+    var color = Math.round(255*c);
     var text = "rgb(" + color + "," + color + "," + color + ") "; 
     console.log(i, text)       
     return text;
